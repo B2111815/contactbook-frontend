@@ -27,9 +27,9 @@ export default {
         };
     },
     methods: {
-        async addContact(contactData) {
+        async addContact(data) {
             try {
-                await ContactService.add(contactData);
+                await ContactService.add(data);
                 alert('Thêm thành công.');
                 this.$router.push({ name: "contactbook" });
             } catch (error) {

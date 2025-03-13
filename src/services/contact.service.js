@@ -8,7 +8,7 @@ class ContactService {
     async getAll() {
         return (await this.api.get("/")).data;
     }
-    async createApiClient(data) {
+    async create(data) {
         return (await this.api.post("/", data)).data;
     }
     async deleteAll() {
